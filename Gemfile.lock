@@ -221,6 +221,10 @@ GEM
       racc (~> 1.4)
     ostruct (0.6.1)
     parallel (1.26.3)
+    parklife (0.6.1)
+      nokogiri
+      rack-test
+      thor
     parser (3.3.6.0)
       ast (~> 2.4.1)
       racc
@@ -390,6 +394,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   kamal
+  parklife (~> 0.6.1)
   propshaft
   puma (>= 5.0)
   rails!
