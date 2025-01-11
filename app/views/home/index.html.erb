@@ -1,0 +1,47 @@
+<div class="min-h-screen w-full bg-white">
+  <!-- Hero Section -->
+  <section id="hero" class="w-full py-8 bg-gradient-to-b from-gray-50 to-white">
+    <div class="container mx-auto px-4 w-full max-w-7xl">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-5xl font-light text-gray-800 mb-3">Hi, I'm Jatin Goyal</h1>
+        <p class="text-lg text-gray-600 mb-6">Full Stack Developer & Software Engineer</p>
+        <div class="space-x-4">
+          <%= link_to "Get in Touch", contact_path, class: "text-blue-600 hover:text-blue-800 transition-colors duration-300 border border-blue-600 px-6 py-2 rounded-md hover:bg-blue-50" %>
+          <%= link_to "Read My Blog", blog_path, class: "text-gray-600 hover:text-gray-800 transition-colors duration-300" %>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="w-full py-8">
+    <div class="container mx-auto px-4 w-full max-w-7xl">
+      <h2 class="text-2xl font-light text-gray-800 mb-4">About Me</h2>
+      <div class="max-w-3xl">
+        <p class="text-gray-600 leading-relaxed">
+          A passionate software engineer with expertise in full-stack development, 
+          cloud technologies, and building scalable applications.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="w-full py-8 bg-gray-50/50">
+    <div class="container mx-auto px-4 w-full max-w-7xl">
+      <h2 class="text-2xl font-light text-gray-800 mb-4">Latest Posts</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <%= link_to blog_path, class: "p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300" do %>
+          <h3 class="text-lg font-medium text-gray-800 mb-2">Sample Blog Post Title</h3>
+          <p class="text-gray-600">Short description of the blog post...</p>
+        <% end %>
+        <!-- Add more blog post previews as needed -->
+      </div>
+      <div class="mt-8 text-center">
+        <%= link_to blog_path, class: "text-blue-600 hover:text-blue-800 transition-colors duration-300" do %>
+          View all posts →
+        <% end %>
+      </div>
+    </div>
+  </section>
+</div>
