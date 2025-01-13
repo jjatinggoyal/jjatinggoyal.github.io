@@ -9,8 +9,8 @@ Rails.application.routes.draw do
   # get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
-  get 'blog', to: 'blog#index'
-  get 'blog/:slug', to: 'blog#show', as: :blog_post
+  get 'posts', to: 'posts#index'
+  get 'posts/:slug', to: 'posts#show', as: :posts_post
 
   get 'projects', to: 'home#projects', as: :projects
   get 'contact', to: 'home#contact', as: :contact
